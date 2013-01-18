@@ -29,7 +29,7 @@ class fader:
     def set_volume(self,level):
         self.lock.acquire()
         self.actual_value = level
-        self._set_actual_value()
+        self._set_actual_volume()
         self.lock.release()
 
     def _set_actual_volume(self):
